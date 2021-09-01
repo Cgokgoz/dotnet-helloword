@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'dotnet:mcr.microsoft.com/dotnet/framework/samples:aspnetapp' }
+    }
      triggers {
         githubPush()
       }
