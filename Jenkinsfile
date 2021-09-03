@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'bitnami/dotnet-sdk' }
+        docker {image 'node:14-alpine'}
     }
      triggers {
         githubPush()
