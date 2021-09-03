@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {image 'node:14-alpine'}
+        docker {image 'appdynamics/dotnet-core-agent'}
     }
      triggers {
         githubPush()
