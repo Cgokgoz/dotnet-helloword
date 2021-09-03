@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'bitnami/dotnet-sdk' }
+        docker { image 'appdynamics/dotnet-core-agent' }
     }
      triggers {
         githubPush()
