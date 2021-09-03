@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'mcr.microsoft.com/dotnet/framework/samples:aspnetapp' }
+        docker { image 'bitnami/dotnet-sdk' }
     }
      triggers {
         githubPush()
